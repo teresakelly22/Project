@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="static/plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="static/plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="static/plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="static/js/ie-emulation-modes-warning.js"></script>
+    <script>      
+
+        $(document).ready(function()
+          {
+            $("#indexBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/");
+                            });
+							
+            $("#homeBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/home");
+                            });
+							
+            $("#prototypeBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/prototype");
+                            });
+							
+            $("#aboutBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/about");
+                            });
+            $("#contactBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/contact");
+                            });
+	
+            $("#mapBtn").click(function(e)
+                            {
+                                e.preventDefault();
+                                $(".starter-template").load("/map");
+                            });
+
+          }); 
+
+      </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="/">HOME</a>-->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><button id="homeBtn">HOME</button></li>  
+            <li><button id="prototypeBtn">PROTOTYPE</button></li>
+            <li><button id="aboutBtn">ABOUT</button></li>
+            <li><button id="contactBtn">CONTACT</button></li>
+            <li><button id="mapBtn">MAP</button></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+      <div class="starter-template" id ="starter-template">
+
+        {% block content %}  {% endblock %}
+      </div>
+	  </br>
+	  </br>
+	  </br>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+	
+    <!-- Footer
+	============================================= -->
+    <footer>
+        <div class="container">
+            <h1>Perfect Card</h1>
+			<div id="info2">
+			<h6>Perfect Incentive</h6>
+			</div>
+            <div class="social">
+                <a href="mailto:info@perfectcard.io"><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="#"><i class="fa fa-dribbble fa-fw fa-2x fa-spin"></i></a>
+                <a href="https://www.linkedin.com/company/perfect-incentive/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+			<h6>The Portershed</h6>
+			<h6>Galway City Innovation District</h6>
+			<h6>Galway</h6>
+            <!--<h6><small>Designed by</small></h6>
+			<h6><small>Teresa Kelly | Tadhg Campbell | Ross Maxwell</small></h6>-->
+			</div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="static/js/custom.js"></script>
+    <!-- JS PLUGINS -->
+    <script src="static/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="static/plugins/countTo/jquery.countTo.js"></script>
+    <script src="static/plugins/inview/jquery.inview.min.js"></script>
+    <script src="static/plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="static/plugins/WOW/dist/wow.min.js"></script>
+    <!-- GOOGLE MAP -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		
+		var TKDiv1 = document.getElementById("starter-template");	
+		var databaseRequest = new XMLHttpRequest();
+		databaseRequest.open('GET', 'http://127.0.0.1:5984/Tkdb/89ab0ecf-4e3a-4703-863a-f7b0d11e8a71');
+		databaseRequest.onload = function() {
+
+		var databaseData = JSON.parse(databaseRequest.responseText);
+		renderHTML1(databaseData);
+		renderHTML2(databaseData);
+		renderHTML3(databaseData);
+		renderHTML4(databaseData);
+		};
+
+		databaseRequest.send();
+
+		function renderHTML1(databaseData){
+
+		  var Data = "<p><br>" + databaseData.pck1 + "<p>";
+		  TKDiv1.insertAdjacentHTML('beforeend', Data);
+			
+		}
+
+
+		var TKDiv2 = document.getElementById("starter-template");	
+
+
+		function renderHTML2(databaseData){
+
+		  var Data = "<p><br>" + databaseData.pck2 + "<p>";
+		TKDiv2.insertAdjacentHTML('beforeend', Data);
+		
+		}
+		
+		
+		var TKDiv3 = document.getElementById("starter-template");	
+
+
+		function renderHTML3(databaseData){
+
+		  var Data = "<p><br>" + databaseData.pck3 + "<p>";
+		TKDiv3.insertAdjacentHTML('beforeend', Data);
+		
+		}
+		
+		
+		var TKDiv4 = document.getElementById("starter-template");	
+
+
+		function renderHTML4(databaseData){
+
+		  var Data = "<p><br>" + databaseData.pck4 + "<p>";
+		TKDiv4.insertAdjacentHTML('beforeend', Data);
+		
+		}
+		
+	</script>
+  </body>
+</html>
